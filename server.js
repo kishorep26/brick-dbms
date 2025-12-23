@@ -11,7 +11,7 @@ const PORT = process.env.PORT || 3000;
 // Middleware
 app.use(cors());
 app.use(bodyParser.json());
-app.use(express.static('.')); // Serve static files (HTML, CSS, JS)
+app.use(express.static(path.join(__dirname))); // Serve static files from root directory
 
 // TiDB Connection Pool
 const pool = mysql.createPool({
@@ -41,6 +41,27 @@ pool.getConnection()
 // Serve index.html at root
 app.get('/', (req, res) => {
     res.sendFile(path.join(__dirname, 'index.html'));
+});
+
+// Serve static assets explicitly
+app.get('/styles.css', (req, res) => {
+    res.sendFile(path.join(__dirname, 'styles.css'));
+});
+
+app.get('/app.js', (req, res) => {
+    res.sendFile(path.join(__dirname, 'app.js'));
+});
+
+app.get('/favicon.png', (req, res) => {
+    res.sendFile(path.join(__dirname, 'favicon.png'));
+});
+
+app.get('/brick.jpg', (req, res) => {
+    res.sendFile(path.join(__dirname, 'brick.jpg'));
+});
+
+app.get('/brickindustry.jpg', (req, res) => {
+    res.sendFile(path.join(__dirname, 'brickindustry.jpg'));
 });
 
 // ==================== Authentication Routes ====================
