@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const mysql = require('mysql2/promise');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -34,6 +35,13 @@ pool.getConnection()
     .catch(err => {
         console.error('❌ Error connecting to TiDB:', err.message);
     });
+
+// ==================== Root Route ====================
+
+// Serve index.html at root
+app.get('/', (req, res) => {
+    res.sendFile(path.join(__dirname, 'index.html'));
+});
 
 // ==================== Authentication Routes ====================
 
