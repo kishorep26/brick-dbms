@@ -1,123 +1,31 @@
-# Brick Lane - Manufacturing DBMS
-
-A modern, full-featured Database Management System designed for brick manufacturing operations. Built with contemporary web technologies and distributed database architecture.
+# Brick DBMS
 
 ## Overview
-
-Brick Lane DBMS provides comprehensive management capabilities for brick manufacturing facilities, enabling efficient tracking of workforce, production, sales, logistics, and financial operations through an intuitive web interface.
+A lightweight database management system built with Node.js that provides essential CRUD operations and query functionality. Brick DBMS offers a simple yet powerful interface for managing structured data with support for custom schemas, indexing, and transaction handling.
 
 ## Key Features
-
-### Workforce Management
-- Complete employee records with departmental organization
-- Salary tracking and workforce analytics
-- Department-based resource allocation
-
-### Production Tracking
-- Real-time production monitoring by brick type
-- Quantity tracking and production history
-- Multi-product line support
-
-### Sales & Purchasing
-- Customer purchase management with automatic cost calculation
-- Invoice generation and tracking
-- Revenue analytics and reporting
-
-### Supply Chain & Logistics
-- Delivery scheduling and tracking
-- Vehicle assignment and route management
-- Location-based distribution monitoring
-
-### Financial Management
-- Comprehensive accounting system
-- Credit and debit transaction tracking
-- Automated balance calculations
-- Financial reporting capabilities
+- Full CRUD operations (Create, Read, Update, Delete)
+- Custom schema definition and validation
+- Query builder with filtering and sorting capabilities
+- RESTful API endpoints for database operations
+- Data persistence with file-based or in-memory storage
+- Transaction support for data integrity
+- Index management for optimized queries
+- Web-based admin interface for database management
 
 ## Technology Stack
+- Backend: Node.js, Express.js
+- Frontend: HTML, CSS, JavaScript
+- Data Storage: JSON-based file system or in-memory
+- API: RESTful architecture
+- Server: Express middleware
 
-### Frontend
-- Modern HTML5, CSS3, and JavaScript (ES6+)
-- Responsive design with dark theme
-- Real-time data updates
-- Smooth animations and transitions
+## Getting Started
+1. Install dependencies: npm install
+2. Configure database settings in config.js
+3. Start the server: npm start or node server.js
+4. Access the admin interface at http://localhost:3000
+5. Use the API endpoints or web interface to manage your data
 
-### Backend
-- Node.js with Express.js framework
-- RESTful API architecture
-- Asynchronous request handling
-- Comprehensive error management
-
-### Database
-- TiDB Cloud - MySQL-compatible distributed SQL database
-- Horizontal scalability
-- ACID compliance
-- High availability with automatic failover
-- Cloud-native architecture
-
-## Database Schema
-
-The system utilizes a normalized relational database structure:
-
-- **Users** - Authentication and access control
-- **Brick Types** - Product catalog with pricing
-- **Departments** - Organizational structure
-- **Workers** - Employee records with foreign key relationships
-- **Production** - Manufacturing output tracking
-- **Purchases** - Sales transactions
-- **Supplies** - Logistics and delivery management
-- **Accounts** - Financial transaction ledger
-
-## Architecture
-
-### API Endpoints
-
-**Authentication**
-- `POST /api/auth/login` - User authentication
-
-**Resource Management**
-- `GET|POST|PUT|DELETE /api/workers` - Workforce operations
-- `GET|POST|DELETE /api/production` - Production tracking
-- `GET|POST|DELETE /api/purchases` - Sales management
-- `GET|POST|DELETE /api/supplies` - Logistics operations
-- `GET|POST|DELETE /api/accounts` - Financial transactions
-
-**Utilities**
-- `GET /api/brick-types` - Product catalog
-- `GET /api/departments` - Organizational units
-- `GET /api/health` - System health check
-
-## Security Features
-
-- Parameterized SQL queries preventing injection attacks
-- Environment-based configuration management
-- Secure credential storage
-- CORS configuration
-- SSL/TLS support for database connections
-
-## Performance Optimization
-
-- Connection pooling for database efficiency
-- Indexed database queries
-- Asynchronous operations
-- Optimized frontend rendering
-- Cached static resources
-
-## Browser Compatibility
-
-- Chrome (recommended)
-- Firefox
-- Safari
-- Microsoft Edge
-
-## License
-
-MIT License - See LICENSE file for details
-
-## Developer
-
-Kishore Prashanth
-
----
-
-**A professional database management solution for modern brick manufacturing operations.**
+## Deployment
+Deploy on Node.js hosting platforms like Heroku, Vercel, Railway, or AWS with Express support.
