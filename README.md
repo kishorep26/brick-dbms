@@ -34,5 +34,34 @@ Perfect for learning database concepts and building lightweight applications.
 4. Access the admin interface at http://localhost:3000
 5. Use the API endpoints or web interface to manage your data
 
+6. ## API Examples
+
+### Create a Record
+```javascript
+POST /api/records
+{
+  "name": "John Doe",
+  "email": "john@example.com"
+}
+```
+
+### Query Records
+```javascript
+GET /api/records?filter={"name":"John"}
+```
+
+### Update a Record
+```javascript
+PUT /api/records/:id
+{
+  "email": "newemail@example.com"
+}
+```
+
+### Delete a Record
+```javascript
+DELETE /api/records/:id
+```
+
 ## Deployment
 Deploy on Node.js hosting platforms like Heroku, Vercel, Railway, or AWS with Express support.
