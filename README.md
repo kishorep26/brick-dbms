@@ -4,6 +4,7 @@
 
 ## Overview
 A lightweight database management system built with Node.js that provides essential CRUD operations and query functionality. Brick DBMS offers a simple yet powerful interface for managing structured data with support for custom schemas, indexing, and transaction handling.
+Perfect for learning database concepts and building lightweight applications.
 
 ## Key Features
 - Full CRUD operations (Create, Read, Update, Delete)
