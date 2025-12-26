@@ -1,5 +1,7 @@
 # Brick DBMS
 
+[![Vercel](https://img.shields.io/badge/Vercel-Deployed-brightgreen?logo=vercel)](https://brick-dbms.vercel.app) [![MIT License](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE) [![Release](https://img.shields.io/github/v/release/kishorep26/brick-dbms)](https://github.com/kishorep26/brick-dbms/releases)
+
 ## Overview
 A lightweight database management system built with Node.js that provides essential CRUD operations and query functionality. Brick DBMS offers a simple yet powerful interface for managing structured data with support for custom schemas, indexing, and transaction handling.
 
