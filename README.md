@@ -23,6 +23,10 @@ Perfect for learning database concepts and building lightweight applications.
 - API: RESTful architecture
 - Server: Express middleware
 
+- ## Screenshots
+
+![Brick DBMS Interface](https://htbuikuqbwstckwscktq.supabase.co/storage/v1/object/public/images/projects/Brick-DBMS.png)
+
 ## Getting Started
 1. Install dependencies: npm install
 2. Configure database settings in config.js
